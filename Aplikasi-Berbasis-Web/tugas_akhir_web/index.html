@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Tugas-14</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+	<div class="w3-container" align="center">
+		<div style="background-image: url(moba.png); height: 100%;">
+			<h1 style="color:white; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold;">KOMPUTER
+				APLIKASI IT</h1>
+			<h4 style="color: white;">Menggunakan HTML dan CSS 2020-2021</h4>
+		</div>
+	</div>
+	<div class="w3-bar w3-green">
+		<button class="w3-bar-item w3-button" onclick="openCar('Home')">Home</button>
+		<button class="w3-bar-item w3-button" onclick="openCar('Profile')">Profile</button>
+		<button class="w3-bar-item w3-button" onclick="openCar('Fanny')">Fanny</button>
+		<button class="w3-bar-item w3-button" onclick="openCar('Gusion')">Gusion</button>
+		<button class="w3-bar-item w3-button" onclick="openCar('Haya')">Hayabusa</button>
+	</div>
+	<br>
+	<br>
+	<div class="w3-container">
+		<div id="Home" class="w3-container Car w3-animate-top" style="display:none">
+			<h2 style="margin-top: -30px; margin-left: -15px;">Home</h2>
+			<h2 style="text-align: center;">Belajar HTML dan CSS</h2>
+			<p style="text-align: center;">Mata Kuliah Pemrograman WEB 1</p>
+			<p style="text-align: center;">Mata Kuliah Komputer Aplikasi IT-1</p>
+			<p style="text-align: center;">Universitas Komputer Indonesia</p>
+		</div>
+	</div>
+	<div class="w3-container" align="center">
+		<div id="Profile" class="w3-container Car w3-animate-bottom" style="display:none">
+			<h2>Nim : 10120104</h2>
+			<h2>Nama : Teguh Aditia</h2>
+			<h2>Kelas : IF-3</h2>
+			<br>
+			<img src="teguh.jpg" alt="teguh" style="width: 20%">
+			<br>
+			<br>
+		</div>
+	</div>
+	<div id="Fanny" class="w3-container Car w3-animate-opacity" style="display:none">
+		<h2>Fanny Mobile Legend</h2>
+		<img src="fanny.jpg" alt="Hero" style="width: 25%">
+	</div>
+	<div id="Gusion" class="w3-container Car w3-animate-zoom" style="display: none">
+		<h2>Gusion Mobile Legend</h2>
+		<img src="gusion.jpg" alt="hero" style="width: 25%">
+	</div>
+	<div id="Haya" class="w3-container Car w3-animate-fading" style="display: none">
+		<h2>Hayabusa Mobile Legend</h2>
+		<img src="haya.png" alt="hero" style="width: 25%">
+	</div>
+	<script>
+		function openCar(namaCar) {
+			var i;
+			var x = document.getElementsByClassName("Car");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			document.getElementById(namaCar).style.display = "block";
+		}
+	</script>
+</body>
+
+</html>
